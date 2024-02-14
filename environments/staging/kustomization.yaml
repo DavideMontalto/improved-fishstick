@@ -1,0 +1,4 @@
+___
+namespace: staging
+resources:
+- Home/my-kustomize-project/base
