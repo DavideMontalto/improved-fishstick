@@ -1,0 +1,7 @@
+namespace: production
+namePrefix: production-
+resources:
+- Home/my-kustomize-project/base
+- namespace.yaml
+patchesStrategicMerge:
+- deployment.yaml
