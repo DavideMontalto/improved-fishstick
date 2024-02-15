@@ -1,4 +1,4 @@
 ___
-namespace: staging
+namespace: openshift-gitops-operator
 resources:
 - Home/my-kustomize-project/base
