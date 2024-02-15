@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
-  namespace: openshift-gitops-operator
-  labels:
-    app: nginx
+  name: hello-openshift
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: hello-openshift
   template:
     metadata:
       labels:
-        app: nginx
+        app: hello-openshift
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
-        
+      - name: hello-openshift
+        image: openshift/hello-openshift:latest
+        ports:
+        - containerPort: 80
