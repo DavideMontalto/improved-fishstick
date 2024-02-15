@@ -1,4 +1,4 @@
 apiVersion: v1
-kind: Namespace
+kind: openshift-gitops-operator
 metadata:
   name: production
