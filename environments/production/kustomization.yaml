@@ -1,7 +1,7 @@
-namespace: production
+namespace: openshift-gitops-operator
 namePrefix: production-
 resources:
-- Home/my-kustomize-project/base
-- namespace.yaml
-patchesStrategicMerge:
-- deployment.yaml
+  - Home/my-kustomize-project/base
+  - namespace.yaml
+patches:
+  - deployment.yaml
