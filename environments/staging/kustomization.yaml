@@ -1,4 +1,3 @@
-___
 namespace: openshift-gitops-operator
 resources:
-- Home/my-kustomize-project/base
+  - /Home/my-kustomize-project/base
